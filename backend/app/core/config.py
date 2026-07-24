@@ -1,5 +1,12 @@
-from pydantic import field_validator
+import json
+
+from pydantic import Field, computed_field
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
+_DEFAULT_CORS = (
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+)
 
 
 class Settings(BaseSettings):
@@ -10,18 +17,24 @@ class Settings(BaseSettings):
     app_name: str = "Language Study API"
     api_v1_prefix: str = "/api/v1"
     database_url: str = "sqlite:///./japanese_study.db"
-    cors_origins: list[str] = [
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-    ]
+    # Comma-separated URLs or JSON array — stored as str so Render env vars parse reliably.
+    cors_origins_env: str | None = Field(default=None, validation_alias="CORS_ORIGINS")
     secret_key: str = "dev-only-change-me-in-production"
     access_token_expire_minutes: int = 60 * 24 * 7
 
-    @field_validator("cors_origins", mode="before")
-    @classmethod
-    def parse_cors_origins(cls, value: object) -> object:
-        if isinstance(value, str):
-            return [part.strip() for part in value.split(",") if part.strip()]
-        return value
+    @computed_field  # type: ignore[prop-decorator]
+    @property
+    def cors_origins(self) -> list[str]:
+        raw = self.cors_origins_env
+        if raw is None or not raw.strip():
+            return list(_DEFAULT_CORS)
+        text = raw.strip()
+        if text.startswith("["):
+            parsed = json.loads(text)
+            if not isinstance(parsed, list):
+                raise ValueError("CORS_ORIGINS JSON must be an array of strings")
+            return [str(item).strip() for item in parsed if str(item).strip()]
+        return [part.strip() for part in text.split(",") if part.strip()]
+
 
 settings = Settings()
