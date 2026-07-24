@@ -1,0 +1,1280 @@
+[
+  {
+    "character": "爱",
+    "meanings": "love",
+    "on_readings": "ài",
+    "kun_readings": null,
+    "stroke_count": 10,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "八",
+    "meanings": "eight",
+    "on_readings": "bā",
+    "kun_readings": null,
+    "stroke_count": 2,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "爸",
+    "meanings": "dad (colloquial)",
+    "on_readings": "bà",
+    "kun_readings": null,
+    "stroke_count": 8,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 爸爸"
+  },
+  {
+    "character": "白",
+    "meanings": "white",
+    "on_readings": "bái",
+    "kun_readings": null,
+    "stroke_count": 5,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "百",
+    "meanings": "hundred",
+    "on_readings": "bǎi",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "本",
+    "meanings": "book, measure word",
+    "on_readings": "běn",
+    "kun_readings": null,
+    "stroke_count": 5,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "不",
+    "meanings": "not",
+    "on_readings": "bù",
+    "kun_readings": null,
+    "stroke_count": 4,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "菜",
+    "meanings": "dish, vegetable",
+    "on_readings": "cài",
+    "kun_readings": null,
+    "stroke_count": 11,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "茶",
+    "meanings": "tea",
+    "on_readings": "chá",
+    "kun_readings": null,
+    "stroke_count": 9,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "吃",
+    "meanings": "eat",
+    "on_readings": "chī",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "出",
+    "meanings": "go out",
+    "on_readings": "chū",
+    "kun_readings": null,
+    "stroke_count": 5,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "打",
+    "meanings": "hit, do (phone)",
+    "on_readings": "dǎ",
+    "kun_readings": null,
+    "stroke_count": 5,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "大",
+    "meanings": "big",
+    "on_readings": "dà",
+    "kun_readings": null,
+    "stroke_count": 3,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "的",
+    "meanings": "possessive particle",
+    "on_readings": "de",
+    "kun_readings": null,
+    "stroke_count": 8,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "点",
+    "meanings": "o'clock, point",
+    "on_readings": "diǎn",
+    "kun_readings": null,
+    "stroke_count": 9,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "电",
+    "meanings": "electric",
+    "on_readings": "diàn",
+    "kun_readings": null,
+    "stroke_count": 5,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 电脑"
+  },
+  {
+    "character": "东",
+    "meanings": "east",
+    "on_readings": "dōng",
+    "kun_readings": null,
+    "stroke_count": 5,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "都",
+    "meanings": "all, both",
+    "on_readings": "dōu",
+    "kun_readings": null,
+    "stroke_count": 10,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "读",
+    "meanings": "read",
+    "on_readings": "dú",
+    "kun_readings": null,
+    "stroke_count": 10,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "对",
+    "meanings": "correct, toward",
+    "on_readings": "duì",
+    "kun_readings": null,
+    "stroke_count": 5,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "多",
+    "meanings": "many",
+    "on_readings": "duō",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "儿",
+    "meanings": "son, suffix",
+    "on_readings": "ér",
+    "kun_readings": null,
+    "stroke_count": 2,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 儿子"
+  },
+  {
+    "character": "二",
+    "meanings": "two",
+    "on_readings": "èr",
+    "kun_readings": null,
+    "stroke_count": 2,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "饭",
+    "meanings": "meal, rice",
+    "on_readings": "fàn",
+    "kun_readings": null,
+    "stroke_count": 7,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "飞",
+    "meanings": "fly",
+    "on_readings": "fēi",
+    "kun_readings": null,
+    "stroke_count": 3,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "分",
+    "meanings": "minute",
+    "on_readings": "fēn",
+    "kun_readings": null,
+    "stroke_count": 4,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "高",
+    "meanings": "tall, high",
+    "on_readings": "gāo",
+    "kun_readings": null,
+    "stroke_count": 10,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "个",
+    "meanings": "general measure word",
+    "on_readings": "gè",
+    "kun_readings": null,
+    "stroke_count": 3,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "工",
+    "meanings": "work",
+    "on_readings": "gōng",
+    "kun_readings": null,
+    "stroke_count": 3,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 工作"
+  },
+  {
+    "character": "狗",
+    "meanings": "dog",
+    "on_readings": "gǒu",
+    "kun_readings": null,
+    "stroke_count": 8,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "汉",
+    "meanings": "Han Chinese",
+    "on_readings": "hàn",
+    "kun_readings": null,
+    "stroke_count": 5,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 汉语"
+  },
+  {
+    "character": "好",
+    "meanings": "good",
+    "on_readings": "hǎo",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "号",
+    "meanings": "number, day",
+    "on_readings": "hào",
+    "kun_readings": null,
+    "stroke_count": 5,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "喝",
+    "meanings": "drink",
+    "on_readings": "hē",
+    "kun_readings": null,
+    "stroke_count": 12,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "和",
+    "meanings": "and, with",
+    "on_readings": "hé",
+    "kun_readings": null,
+    "stroke_count": 8,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "很",
+    "meanings": "very",
+    "on_readings": "hěn",
+    "kun_readings": null,
+    "stroke_count": 9,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "后",
+    "meanings": "behind, after",
+    "on_readings": "hòu",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "回",
+    "meanings": "return",
+    "on_readings": "huí",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "会",
+    "meanings": "can, meeting",
+    "on_readings": "huì",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "几",
+    "meanings": "how many",
+    "on_readings": "jǐ",
+    "kun_readings": null,
+    "stroke_count": 2,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "家",
+    "meanings": "home, family",
+    "on_readings": "jiā",
+    "kun_readings": null,
+    "stroke_count": 10,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "叫",
+    "meanings": "call, be called",
+    "on_readings": "jiào",
+    "kun_readings": null,
+    "stroke_count": 5,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "今",
+    "meanings": "now",
+    "on_readings": "jīn",
+    "kun_readings": null,
+    "stroke_count": 4,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 今天"
+  },
+  {
+    "character": "九",
+    "meanings": "nine",
+    "on_readings": "jiǔ",
+    "kun_readings": null,
+    "stroke_count": 2,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "开",
+    "meanings": "open, drive",
+    "on_readings": "kāi",
+    "kun_readings": null,
+    "stroke_count": 4,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "看",
+    "meanings": "look, read",
+    "on_readings": "kàn",
+    "kun_readings": null,
+    "stroke_count": 9,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "块",
+    "meanings": "piece, yuan (colloq.)",
+    "on_readings": "kuài",
+    "kun_readings": null,
+    "stroke_count": 7,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "来",
+    "meanings": "come",
+    "on_readings": "lái",
+    "kun_readings": null,
+    "stroke_count": 7,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "老",
+    "meanings": "old",
+    "on_readings": "lǎo",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 老师"
+  },
+  {
+    "character": "了",
+    "meanings": "aspect particle",
+    "on_readings": "le",
+    "kun_readings": null,
+    "stroke_count": 2,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "冷",
+    "meanings": "cold",
+    "on_readings": "lěng",
+    "kun_readings": null,
+    "stroke_count": 7,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "里",
+    "meanings": "inside",
+    "on_readings": "lǐ",
+    "kun_readings": null,
+    "stroke_count": 7,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "六",
+    "meanings": "six",
+    "on_readings": "liù",
+    "kun_readings": null,
+    "stroke_count": 4,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "妈",
+    "meanings": "mom",
+    "on_readings": "mā",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 妈妈"
+  },
+  {
+    "character": "吗",
+    "meanings": "question particle",
+    "on_readings": "ma",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "买",
+    "meanings": "buy",
+    "on_readings": "mǎi",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "猫",
+    "meanings": "cat",
+    "on_readings": "māo",
+    "kun_readings": null,
+    "stroke_count": 11,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "没",
+    "meanings": "not have",
+    "on_readings": "méi",
+    "kun_readings": null,
+    "stroke_count": 7,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "米",
+    "meanings": "rice",
+    "on_readings": "mǐ",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 米饭"
+  },
+  {
+    "character": "名",
+    "meanings": "name",
+    "on_readings": "míng",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "明",
+    "meanings": "bright, tomorrow",
+    "on_readings": "míng",
+    "kun_readings": null,
+    "stroke_count": 8,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 明天"
+  },
+  {
+    "character": "哪",
+    "meanings": "which",
+    "on_readings": "nǎ",
+    "kun_readings": null,
+    "stroke_count": 9,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "那",
+    "meanings": "that",
+    "on_readings": "nà",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "呢",
+    "meanings": "question particle",
+    "on_readings": "ne",
+    "kun_readings": null,
+    "stroke_count": 8,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "能",
+    "meanings": "can",
+    "on_readings": "néng",
+    "kun_readings": null,
+    "stroke_count": 10,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "你",
+    "meanings": "you",
+    "on_readings": "nǐ",
+    "kun_readings": null,
+    "stroke_count": 7,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "年",
+    "meanings": "year",
+    "on_readings": "nián",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "女",
+    "meanings": "female",
+    "on_readings": "nǚ",
+    "kun_readings": null,
+    "stroke_count": 3,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 女儿"
+  },
+  {
+    "character": "朋",
+    "meanings": "friend",
+    "on_readings": "péng",
+    "kun_readings": null,
+    "stroke_count": 8,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 朋友"
+  },
+  {
+    "character": "漂",
+    "meanings": "pretty",
+    "on_readings": "piào",
+    "kun_readings": null,
+    "stroke_count": 14,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 漂亮"
+  },
+  {
+    "character": "苹",
+    "meanings": "apple",
+    "on_readings": "píng",
+    "kun_readings": null,
+    "stroke_count": 8,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 苹果"
+  },
+  {
+    "character": "七",
+    "meanings": "seven",
+    "on_readings": "qī",
+    "kun_readings": null,
+    "stroke_count": 2,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "前",
+    "meanings": "front, before",
+    "on_readings": "qián",
+    "kun_readings": null,
+    "stroke_count": 9,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "钱",
+    "meanings": "money",
+    "on_readings": "qián",
+    "kun_readings": null,
+    "stroke_count": 10,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "请",
+    "meanings": "please",
+    "on_readings": "qǐng",
+    "kun_readings": null,
+    "stroke_count": 10,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "去",
+    "meanings": "go",
+    "on_readings": "qù",
+    "kun_readings": null,
+    "stroke_count": 5,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "热",
+    "meanings": "hot",
+    "on_readings": "rè",
+    "kun_readings": null,
+    "stroke_count": 10,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "人",
+    "meanings": "person",
+    "on_readings": "rén",
+    "kun_readings": null,
+    "stroke_count": 2,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "认",
+    "meanings": "recognize",
+    "on_readings": "rèn",
+    "kun_readings": null,
+    "stroke_count": 4,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 认识"
+  },
+  {
+    "character": "日",
+    "meanings": "day, sun",
+    "on_readings": "rì",
+    "kun_readings": null,
+    "stroke_count": 4,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "三",
+    "meanings": "three",
+    "on_readings": "sān",
+    "kun_readings": null,
+    "stroke_count": 3,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "商",
+    "meanings": "commerce",
+    "on_readings": "shāng",
+    "kun_readings": null,
+    "stroke_count": 11,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 商店"
+  },
+  {
+    "character": "上",
+    "meanings": "up, on",
+    "on_readings": "shàng",
+    "kun_readings": null,
+    "stroke_count": 3,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "少",
+    "meanings": "few",
+    "on_readings": "shǎo",
+    "kun_readings": null,
+    "stroke_count": 4,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "谁",
+    "meanings": "who",
+    "on_readings": "shéi",
+    "kun_readings": null,
+    "stroke_count": 10,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "什",
+    "meanings": "what",
+    "on_readings": "shén",
+    "kun_readings": null,
+    "stroke_count": 4,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 什么"
+  },
+  {
+    "character": "十",
+    "meanings": "ten",
+    "on_readings": "shí",
+    "kun_readings": null,
+    "stroke_count": 2,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "时",
+    "meanings": "time",
+    "on_readings": "shí",
+    "kun_readings": null,
+    "stroke_count": 7,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 时候"
+  },
+  {
+    "character": "是",
+    "meanings": "to be",
+    "on_readings": "shì",
+    "kun_readings": null,
+    "stroke_count": 9,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "书",
+    "meanings": "book",
+    "on_readings": "shū",
+    "kun_readings": null,
+    "stroke_count": 4,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "水",
+    "meanings": "water",
+    "on_readings": "shuǐ",
+    "kun_readings": null,
+    "stroke_count": 4,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "睡",
+    "meanings": "sleep",
+    "on_readings": "shuì",
+    "kun_readings": null,
+    "stroke_count": 13,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 睡觉"
+  },
+  {
+    "character": "说",
+    "meanings": "speak",
+    "on_readings": "shuō",
+    "kun_readings": null,
+    "stroke_count": 9,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "四",
+    "meanings": "four",
+    "on_readings": "sì",
+    "kun_readings": null,
+    "stroke_count": 5,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "岁",
+    "meanings": "years (age)",
+    "on_readings": "suì",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "他",
+    "meanings": "he",
+    "on_readings": "tā",
+    "kun_readings": null,
+    "stroke_count": 5,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "她",
+    "meanings": "she",
+    "on_readings": "tā",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "太",
+    "meanings": "too, very",
+    "on_readings": "tài",
+    "kun_readings": null,
+    "stroke_count": 4,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "天",
+    "meanings": "sky, day",
+    "on_readings": "tiān",
+    "kun_readings": null,
+    "stroke_count": 4,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 天气"
+  },
+  {
+    "character": "听",
+    "meanings": "listen",
+    "on_readings": "tīng",
+    "kun_readings": null,
+    "stroke_count": 7,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "同",
+    "meanings": "same",
+    "on_readings": "tóng",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 同学"
+  },
+  {
+    "character": "我",
+    "meanings": "I, me",
+    "on_readings": "wǒ",
+    "kun_readings": null,
+    "stroke_count": 7,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "五",
+    "meanings": "five",
+    "on_readings": "wǔ",
+    "kun_readings": null,
+    "stroke_count": 4,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "喜",
+    "meanings": "like, happy",
+    "on_readings": "xǐ",
+    "kun_readings": null,
+    "stroke_count": 12,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 喜欢"
+  },
+  {
+    "character": "下",
+    "meanings": "down",
+    "on_readings": "xià",
+    "kun_readings": null,
+    "stroke_count": 3,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "雨",
+    "meanings": "rain",
+    "on_readings": "yǔ",
+    "kun_readings": null,
+    "stroke_count": 8,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 下雨"
+  },
+  {
+    "character": "先",
+    "meanings": "first",
+    "on_readings": "xiān",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 先生"
+  },
+  {
+    "character": "现",
+    "meanings": "now",
+    "on_readings": "xiàn",
+    "kun_readings": null,
+    "stroke_count": 8,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 现在"
+  },
+  {
+    "character": "想",
+    "meanings": "think, miss",
+    "on_readings": "xiǎng",
+    "kun_readings": null,
+    "stroke_count": 13,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "小",
+    "meanings": "small",
+    "on_readings": "xiǎo",
+    "kun_readings": null,
+    "stroke_count": 3,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "些",
+    "meanings": "some",
+    "on_readings": "xiē",
+    "kun_readings": null,
+    "stroke_count": 8,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "写",
+    "meanings": "write",
+    "on_readings": "xiě",
+    "kun_readings": null,
+    "stroke_count": 5,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "谢",
+    "meanings": "thank",
+    "on_readings": "xiè",
+    "kun_readings": null,
+    "stroke_count": 12,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 谢谢"
+  },
+  {
+    "character": "星",
+    "meanings": "star",
+    "on_readings": "xīng",
+    "kun_readings": null,
+    "stroke_count": 9,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 星期"
+  },
+  {
+    "character": "学",
+    "meanings": "study",
+    "on_readings": "xué",
+    "kun_readings": null,
+    "stroke_count": 8,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "一",
+    "meanings": "one",
+    "on_readings": "yī",
+    "kun_readings": null,
+    "stroke_count": 1,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "衣",
+    "meanings": "clothes",
+    "on_readings": "yī",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 衣服"
+  },
+  {
+    "character": "医",
+    "meanings": "medicine",
+    "on_readings": "yī",
+    "kun_readings": null,
+    "stroke_count": 7,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 医生/医院"
+  },
+  {
+    "character": "椅",
+    "meanings": "chair",
+    "on_readings": "yǐ",
+    "kun_readings": null,
+    "stroke_count": 12,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 椅子"
+  },
+  {
+    "character": "有",
+    "meanings": "have",
+    "on_readings": "yǒu",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "月",
+    "meanings": "month, moon",
+    "on_readings": "yuè",
+    "kun_readings": null,
+    "stroke_count": 4,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "再",
+    "meanings": "again",
+    "on_readings": "zài",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "在",
+    "meanings": "at, in",
+    "on_readings": "zài",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "怎",
+    "meanings": "how",
+    "on_readings": "zěn",
+    "kun_readings": null,
+    "stroke_count": 9,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 怎么"
+  },
+  {
+    "character": "这",
+    "meanings": "this",
+    "on_readings": "zhè",
+    "kun_readings": null,
+    "stroke_count": 7,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "中",
+    "meanings": "middle, China",
+    "on_readings": "zhōng",
+    "kun_readings": null,
+    "stroke_count": 4,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 中国"
+  },
+  {
+    "character": "住",
+    "meanings": "live",
+    "on_readings": "zhù",
+    "kun_readings": null,
+    "stroke_count": 7,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "桌",
+    "meanings": "table",
+    "on_readings": "zhuō",
+    "kun_readings": null,
+    "stroke_count": 10,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 桌子"
+  },
+  {
+    "character": "字",
+    "meanings": "character",
+    "on_readings": "zì",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "昨",
+    "meanings": "yesterday",
+    "on_readings": "zuó",
+    "kun_readings": null,
+    "stroke_count": 9,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 昨天"
+  },
+  {
+    "character": "做",
+    "meanings": "do, make",
+    "on_readings": "zuò",
+    "kun_readings": null,
+    "stroke_count": 11,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "坐",
+    "meanings": "sit",
+    "on_readings": "zuò",
+    "kun_readings": null,
+    "stroke_count": 7,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "车",
+    "meanings": "vehicle",
+    "on_readings": "chē",
+    "kun_readings": null,
+    "stroke_count": 7,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 出租车"
+  },
+  {
+    "character": "机",
+    "meanings": "machine",
+    "on_readings": "jī",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 飞机"
+  },
+  {
+    "character": "影",
+    "meanings": "shadow, film",
+    "on_readings": "yǐng",
+    "kun_readings": null,
+    "stroke_count": 15,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 电影"
+  },
+  {
+    "character": "西",
+    "meanings": "west",
+    "on_readings": "xī",
+    "kun_readings": null,
+    "stroke_count": 6,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "果",
+    "meanings": "fruit",
+    "on_readings": "guǒ",
+    "kun_readings": null,
+    "stroke_count": 8,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 水果"
+  },
+  {
+    "character": "起",
+    "meanings": "rise",
+    "on_readings": "qǐ",
+    "kun_readings": null,
+    "stroke_count": 10,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "床",
+    "meanings": "bed",
+    "on_readings": "chuáng",
+    "kun_readings": null,
+    "stroke_count": 7,
+    "jlpt_level": null,
+    "notes": "HSK 1"
+  },
+  {
+    "character": "气",
+    "meanings": "air, weather",
+    "on_readings": "qì",
+    "kun_readings": null,
+    "stroke_count": 4,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 天气"
+  },
+  {
+    "character": "话",
+    "meanings": "speech",
+    "on_readings": "huà",
+    "kun_readings": null,
+    "stroke_count": 13,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 电话"
+  },
+  {
+    "character": "视",
+    "meanings": "view",
+    "on_readings": "shì",
+    "kun_readings": null,
+    "stroke_count": 8,
+    "jlpt_level": null,
+    "notes": "HSK 1 — 电视"
+  }
+]

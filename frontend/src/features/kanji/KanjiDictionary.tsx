@@ -99,8 +99,11 @@ export function KanjiDictionary() {
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription>
-          Browse seeded {isJapaneseStudy ? 'kanji' : 'characters'} (read-only).
-          Detail shows vocabulary that contains each character.
+          {loadingList
+            ? 'Loading character list…'
+            : isJapaneseStudy
+              ? `${items.length} JLPT N5 kanji (read-only). Search or filter below.`
+              : `${items.length} HSK 1 characters (read-only). Pinyin is shown as reading.`}
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
@@ -180,7 +183,8 @@ export function KanjiDictionary() {
                 <p className="text-sm">{detail.meanings}</p>
                 {detail.on_readings ? (
                   <p className="text-sm text-muted-foreground">
-                    On: {detail.on_readings}
+                    {isJapaneseStudy ? 'On: ' : 'Reading: '}
+                    {detail.on_readings}
                   </p>
                 ) : null}
                 {detail.kun_readings ? (

@@ -67,3 +67,4 @@ You need **HTTPS** and one **shared backend** both phones can reach.
 - **M9** — SRS at `/api/v1/reviews` (due queue + again/good/easy ratings)
 - **M10** — Dashboard at `/api/v1/stats/dashboard` (counts, JLPT bars, 7-day reviews, streak)
 - **Pre-M11** — JWT auth, per-user + per-language data, mobile app shell, PWA, Chinese study mode
+- **M11 (Learn expansion, phase A)** — Bulk N5 + HSK 1 character seeds (`backend/data/kanji/`)

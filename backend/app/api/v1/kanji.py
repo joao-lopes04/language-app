@@ -25,7 +25,7 @@ def list_kanji(
     statement = (
         select(Kanji)
         .where(Kanji.language_code == current_user.study_language)
-        .order_by(Kanji.id)
+        .order_by(Kanji.character, Kanji.id)
     )
     if jlpt_level is not None:
         statement = statement.where(Kanji.jlpt_level == jlpt_level)

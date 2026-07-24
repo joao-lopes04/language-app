@@ -1,0 +1,1050 @@
+[
+  {
+    "character": "一",
+    "meanings": "one",
+    "on_readings": "イチ",
+    "kun_readings": "ひと",
+    "stroke_count": 1,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "二",
+    "meanings": "two",
+    "on_readings": "ニ",
+    "kun_readings": "ふた",
+    "stroke_count": 2,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "三",
+    "meanings": "three",
+    "on_readings": "サン",
+    "kun_readings": "み",
+    "stroke_count": 3,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "四",
+    "meanings": "four",
+    "on_readings": "シ",
+    "kun_readings": "よん",
+    "stroke_count": 5,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "五",
+    "meanings": "five",
+    "on_readings": "ゴ",
+    "kun_readings": "いつ",
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "六",
+    "meanings": "six",
+    "on_readings": "ロク",
+    "kun_readings": "む",
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "七",
+    "meanings": "seven",
+    "on_readings": "シチ",
+    "kun_readings": "なな",
+    "stroke_count": 2,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "八",
+    "meanings": "eight",
+    "on_readings": "ハチ",
+    "kun_readings": "や",
+    "stroke_count": 2,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "九",
+    "meanings": "nine",
+    "on_readings": "キュウ",
+    "kun_readings": "ここの",
+    "stroke_count": 2,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "十",
+    "meanings": "ten",
+    "on_readings": "ジュウ",
+    "kun_readings": "とお",
+    "stroke_count": 2,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "百",
+    "meanings": "hundred",
+    "on_readings": "ヒャク",
+    "kun_readings": "もも",
+    "stroke_count": 6,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "千",
+    "meanings": "thousand",
+    "on_readings": "セン",
+    "kun_readings": "ち",
+    "stroke_count": 3,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "万",
+    "meanings": "ten thousand",
+    "on_readings": "マン",
+    "kun_readings": null,
+    "stroke_count": 3,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "円",
+    "meanings": "yen, circle",
+    "on_readings": "エン",
+    "kun_readings": "まる",
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "人",
+    "meanings": "person",
+    "on_readings": "ジン、ニン",
+    "kun_readings": "ひと",
+    "stroke_count": 2,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "男",
+    "meanings": "man, male",
+    "on_readings": "ダン、ナン",
+    "kun_readings": "おとこ",
+    "stroke_count": 7,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "女",
+    "meanings": "woman, female",
+    "on_readings": "ジョ",
+    "kun_readings": "おんな",
+    "stroke_count": 3,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "子",
+    "meanings": "child",
+    "on_readings": "シ",
+    "kun_readings": "こ",
+    "stroke_count": 3,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "母",
+    "meanings": "mother",
+    "on_readings": "ボ",
+    "kun_readings": "はは",
+    "stroke_count": 5,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "父",
+    "meanings": "father",
+    "on_readings": "フ",
+    "kun_readings": "ちち",
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "友",
+    "meanings": "friend",
+    "on_readings": "ユウ",
+    "kun_readings": "とも",
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "先",
+    "meanings": "before, previous",
+    "on_readings": "セン",
+    "kun_readings": "さき",
+    "stroke_count": 6,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "生",
+    "meanings": "life, birth",
+    "on_readings": "セイ、ショウ",
+    "kun_readings": "い",
+    "stroke_count": 5,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "学",
+    "meanings": "study, learning",
+    "on_readings": "ガク",
+    "kun_readings": "まな",
+    "stroke_count": 8,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "校",
+    "meanings": "school",
+    "on_readings": "コウ",
+    "kun_readings": null,
+    "stroke_count": 10,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "名",
+    "meanings": "name",
+    "on_readings": "メイ、ミョウ",
+    "kun_readings": "な",
+    "stroke_count": 6,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "年",
+    "meanings": "year",
+    "on_readings": "ネン",
+    "kun_readings": "とし",
+    "stroke_count": 6,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "月",
+    "meanings": "month, moon",
+    "on_readings": "ゲツ、ガツ",
+    "kun_readings": "つき",
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "日",
+    "meanings": "day, sun",
+    "on_readings": "ニチ、ジツ",
+    "kun_readings": "ひ",
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "時",
+    "meanings": "time, hour",
+    "on_readings": "ジ",
+    "kun_readings": "とき",
+    "stroke_count": 10,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "分",
+    "meanings": "minute, part",
+    "on_readings": "ブン、フン",
+    "kun_readings": "わ",
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "半",
+    "meanings": "half",
+    "on_readings": "ハン",
+    "kun_readings": "なか",
+    "stroke_count": 5,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "今",
+    "meanings": "now",
+    "on_readings": "コン、キン",
+    "kun_readings": "いま",
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "明",
+    "meanings": "bright, tomorrow",
+    "on_readings": "メイ、ミョウ",
+    "kun_readings": "あ",
+    "stroke_count": 8,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "昨",
+    "meanings": "previous (yesterday)",
+    "on_readings": "サク",
+    "kun_readings": null,
+    "stroke_count": 9,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "毎",
+    "meanings": "every",
+    "on_readings": "マイ",
+    "kun_readings": "ごと",
+    "stroke_count": 6,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "何",
+    "meanings": "what",
+    "on_readings": "カ",
+    "kun_readings": "なに",
+    "stroke_count": 7,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "午",
+    "meanings": "noon",
+    "on_readings": "ゴ",
+    "kun_readings": null,
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "前",
+    "meanings": "before, front",
+    "on_readings": "ゼン",
+    "kun_readings": "まえ",
+    "stroke_count": 9,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "後",
+    "meanings": "after, behind",
+    "on_readings": "ゴ、コウ",
+    "kun_readings": "あと",
+    "stroke_count": 9,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "上",
+    "meanings": "up, above",
+    "on_readings": "ジョウ",
+    "kun_readings": "うえ",
+    "stroke_count": 3,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "下",
+    "meanings": "down, below",
+    "on_readings": "カ、ゲ",
+    "kun_readings": "した",
+    "stroke_count": 3,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "左",
+    "meanings": "left",
+    "on_readings": "サ",
+    "kun_readings": "ひだり",
+    "stroke_count": 5,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "右",
+    "meanings": "right",
+    "on_readings": "ウ、ユウ",
+    "kun_readings": "みぎ",
+    "stroke_count": 5,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "中",
+    "meanings": "middle, inside",
+    "on_readings": "チュウ",
+    "kun_readings": "なか",
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "外",
+    "meanings": "outside",
+    "on_readings": "ガイ、ゲ",
+    "kun_readings": "そと",
+    "stroke_count": 5,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "内",
+    "meanings": "inside",
+    "on_readings": "ナイ、ダイ",
+    "kun_readings": "うち",
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "大",
+    "meanings": "big",
+    "on_readings": "ダイ、タイ",
+    "kun_readings": "おお",
+    "stroke_count": 3,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "小",
+    "meanings": "small",
+    "on_readings": "ショウ",
+    "kun_readings": "ちい",
+    "stroke_count": 3,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "多",
+    "meanings": "many",
+    "on_readings": "タ",
+    "kun_readings": "おお",
+    "stroke_count": 6,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "少",
+    "meanings": "few",
+    "on_readings": "ショウ",
+    "kun_readings": "すく",
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "長",
+    "meanings": "long, leader",
+    "on_readings": "チョウ",
+    "kun_readings": "なが",
+    "stroke_count": 8,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "高",
+    "meanings": "high, expensive",
+    "on_readings": "コウ",
+    "kun_readings": "たか",
+    "stroke_count": 10,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "新",
+    "meanings": "new",
+    "on_readings": "シン",
+    "kun_readings": "あたら",
+    "stroke_count": 13,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "古",
+    "meanings": "old",
+    "on_readings": "コ",
+    "kun_readings": "ふる",
+    "stroke_count": 5,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "白",
+    "meanings": "white",
+    "on_readings": "ハク、ビャク",
+    "kun_readings": "しろ",
+    "stroke_count": 5,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "赤",
+    "meanings": "red",
+    "on_readings": "セキ、シャク",
+    "kun_readings": "あか",
+    "stroke_count": 7,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "青",
+    "meanings": "blue, green",
+    "on_readings": "セイ、ショウ",
+    "kun_readings": "あお",
+    "stroke_count": 8,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "色",
+    "meanings": "color",
+    "on_readings": "ショク",
+    "kun_readings": "いろ",
+    "stroke_count": 6,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "東",
+    "meanings": "east",
+    "on_readings": "トウ",
+    "kun_readings": "ひがし",
+    "stroke_count": 8,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "西",
+    "meanings": "west",
+    "on_readings": "セイ、サイ",
+    "kun_readings": "にし",
+    "stroke_count": 6,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "南",
+    "meanings": "south",
+    "on_readings": "ナン",
+    "kun_readings": "みなみ",
+    "stroke_count": 9,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "北",
+    "meanings": "north",
+    "on_readings": "ホク",
+    "kun_readings": "きた",
+    "stroke_count": 5,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "国",
+    "meanings": "country",
+    "on_readings": "コク",
+    "kun_readings": "くに",
+    "stroke_count": 8,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "語",
+    "meanings": "language, word",
+    "on_readings": "ゴ",
+    "kun_readings": "かた",
+    "stroke_count": 14,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "本",
+    "meanings": "book, origin",
+    "on_readings": "ホン",
+    "kun_readings": "もと",
+    "stroke_count": 5,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "書",
+    "meanings": "write",
+    "on_readings": "ショ",
+    "kun_readings": "か",
+    "stroke_count": 10,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "読",
+    "meanings": "read",
+    "on_readings": "ドク、トク",
+    "kun_readings": "よ",
+    "stroke_count": 14,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "聞",
+    "meanings": "hear, ask",
+    "on_readings": "ブン、モン",
+    "kun_readings": "き",
+    "stroke_count": 14,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "話",
+    "meanings": "talk, story",
+    "on_readings": "ワ",
+    "kun_readings": "はな",
+    "stroke_count": 13,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "言",
+    "meanings": "say, word",
+    "on_readings": "ゲン、ゴン",
+    "kun_readings": "い",
+    "stroke_count": 7,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "食",
+    "meanings": "eat, food",
+    "on_readings": "ショク、ジキ",
+    "kun_readings": "た",
+    "stroke_count": 9,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "飲",
+    "meanings": "drink",
+    "on_readings": "イン",
+    "kun_readings": "の",
+    "stroke_count": 12,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "見",
+    "meanings": "see",
+    "on_readings": "ケン",
+    "kun_readings": "み",
+    "stroke_count": 7,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "行",
+    "meanings": "go, act",
+    "on_readings": "コウ、ギョウ",
+    "kun_readings": "い",
+    "stroke_count": 6,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "来",
+    "meanings": "come",
+    "on_readings": "ライ",
+    "kun_readings": "く",
+    "stroke_count": 7,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "帰",
+    "meanings": "return home",
+    "on_readings": "キ",
+    "kun_readings": "かえ",
+    "stroke_count": 10,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "入",
+    "meanings": "enter",
+    "on_readings": "ニュウ",
+    "kun_readings": "はい",
+    "stroke_count": 2,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "出",
+    "meanings": "exit, leave",
+    "on_readings": "シュツ、スイ",
+    "kun_readings": "で",
+    "stroke_count": 5,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "立",
+    "meanings": "stand",
+    "on_readings": "リツ",
+    "kun_readings": "た",
+    "stroke_count": 5,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "休",
+    "meanings": "rest",
+    "on_readings": "キュウ",
+    "kun_readings": "やす",
+    "stroke_count": 6,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "買",
+    "meanings": "buy",
+    "on_readings": "バイ",
+    "kun_readings": "か",
+    "stroke_count": 12,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "売",
+    "meanings": "sell",
+    "on_readings": "バイ",
+    "kun_readings": "う",
+    "stroke_count": 7,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "会",
+    "meanings": "meet, society",
+    "on_readings": "カイ、エ",
+    "kun_readings": "あ",
+    "stroke_count": 6,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "社",
+    "meanings": "company, shrine",
+    "on_readings": "シャ",
+    "kun_readings": "やしろ",
+    "stroke_count": 7,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "店",
+    "meanings": "shop",
+    "on_readings": "テン",
+    "kun_readings": "みせ",
+    "stroke_count": 8,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "駅",
+    "meanings": "station",
+    "on_readings": "エキ",
+    "kun_readings": null,
+    "stroke_count": 14,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "道",
+    "meanings": "road, way",
+    "on_readings": "ドウ、トウ",
+    "kun_readings": "みち",
+    "stroke_count": 12,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "車",
+    "meanings": "car, vehicle",
+    "on_readings": "シャ",
+    "kun_readings": "くるま",
+    "stroke_count": 7,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "電",
+    "meanings": "electricity",
+    "on_readings": "デン",
+    "kun_readings": null,
+    "stroke_count": 13,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "自",
+    "meanings": "self",
+    "on_readings": "ジ、シ",
+    "kun_readings": "みずか",
+    "stroke_count": 6,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "室",
+    "meanings": "room",
+    "on_readings": "シツ",
+    "kun_readings": "むろ",
+    "stroke_count": 9,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "家",
+    "meanings": "house, family",
+    "on_readings": "カ、ケ",
+    "kun_readings": "いえ",
+    "stroke_count": 10,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "門",
+    "meanings": "gate",
+    "on_readings": "モン",
+    "kun_readings": "かど",
+    "stroke_count": 8,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "口",
+    "meanings": "mouth",
+    "on_readings": "コウ、ク",
+    "kun_readings": "くち",
+    "stroke_count": 3,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "手",
+    "meanings": "hand",
+    "on_readings": "シュ",
+    "kun_readings": "て",
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "足",
+    "meanings": "foot, leg",
+    "on_readings": "ソク",
+    "kun_readings": "あし",
+    "stroke_count": 7,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "目",
+    "meanings": "eye",
+    "on_readings": "モク、ボク",
+    "kun_readings": "め",
+    "stroke_count": 5,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "耳",
+    "meanings": "ear",
+    "on_readings": "ジ",
+    "kun_readings": "みみ",
+    "stroke_count": 6,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "体",
+    "meanings": "body",
+    "on_readings": "タイ、テイ",
+    "kun_readings": "からだ",
+    "stroke_count": 7,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "力",
+    "meanings": "power",
+    "on_readings": "リョク、リキ",
+    "kun_readings": "ちから",
+    "stroke_count": 2,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "天",
+    "meanings": "heaven, sky",
+    "on_readings": "テン",
+    "kun_readings": "あま",
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "気",
+    "meanings": "spirit, air",
+    "on_readings": "キ、ケ",
+    "kun_readings": "き",
+    "stroke_count": 6,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "雨",
+    "meanings": "rain",
+    "on_readings": "ウ",
+    "kun_readings": "あめ",
+    "stroke_count": 8,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "雪",
+    "meanings": "snow",
+    "on_readings": "セツ",
+    "kun_readings": "ゆき",
+    "stroke_count": 11,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "花",
+    "meanings": "flower",
+    "on_readings": "カ",
+    "kun_readings": "はな",
+    "stroke_count": 7,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "火",
+    "meanings": "fire",
+    "on_readings": "カ",
+    "kun_readings": "ひ",
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "水",
+    "meanings": "water",
+    "on_readings": "スイ",
+    "kun_readings": "みず",
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "土",
+    "meanings": "earth, soil",
+    "on_readings": "ド、ト",
+    "kun_readings": "つち",
+    "stroke_count": 3,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "木",
+    "meanings": "tree, wood",
+    "on_readings": "ボク、モク",
+    "kun_readings": "き",
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "金",
+    "meanings": "gold, money",
+    "on_readings": "キン、コン",
+    "kun_readings": "かね",
+    "stroke_count": 8,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "山",
+    "meanings": "mountain",
+    "on_readings": "サン",
+    "kun_readings": "やま",
+    "stroke_count": 3,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "川",
+    "meanings": "river",
+    "on_readings": "セン",
+    "kun_readings": "かわ",
+    "stroke_count": 3,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "海",
+    "meanings": "sea",
+    "on_readings": "カイ",
+    "kun_readings": "うみ",
+    "stroke_count": 9,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "空",
+    "meanings": "sky, empty",
+    "on_readings": "クウ",
+    "kun_readings": "そら",
+    "stroke_count": 8,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "林",
+    "meanings": "grove",
+    "on_readings": "リン",
+    "kun_readings": "はやし",
+    "stroke_count": 8,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "田",
+    "meanings": "rice field",
+    "on_readings": "デン",
+    "kun_readings": "た",
+    "stroke_count": 5,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "犬",
+    "meanings": "dog",
+    "on_readings": "ケン",
+    "kun_readings": "いぬ",
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "猫",
+    "meanings": "cat",
+    "on_readings": "ビョウ",
+    "kun_readings": "ねこ",
+    "stroke_count": 11,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "魚",
+    "meanings": "fish",
+    "on_readings": "ギョ",
+    "kun_readings": "さかな",
+    "stroke_count": 11,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "鳥",
+    "meanings": "bird",
+    "on_readings": "チョウ",
+    "kun_readings": "とり",
+    "stroke_count": 11,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "虫",
+    "meanings": "insect",
+    "on_readings": "チュウ",
+    "kun_readings": "むし",
+    "stroke_count": 6,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "間",
+    "meanings": "interval, between",
+    "on_readings": "カン、ケン",
+    "kun_readings": "あいだ",
+    "stroke_count": 12,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "方",
+    "meanings": "direction, way",
+    "on_readings": "ホウ",
+    "kun_readings": "かた",
+    "stroke_count": 4,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "正",
+    "meanings": "correct",
+    "on_readings": "セイ、ショウ",
+    "kun_readings": "ただ",
+    "stroke_count": 5,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "安",
+    "meanings": "cheap, peaceful",
+    "on_readings": "アン",
+    "kun_readings": "やす",
+    "stroke_count": 6,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "医",
+    "meanings": "medicine, doctor",
+    "on_readings": "イ",
+    "kun_readings": null,
+    "stroke_count": 7,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "院",
+    "meanings": "institution",
+    "on_readings": "イン",
+    "kun_readings": null,
+    "stroke_count": 10,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "去",
+    "meanings": "past, leave",
+    "on_readings": "キョ、コ",
+    "kun_readings": "さ",
+    "stroke_count": 5,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "週",
+    "meanings": "week",
+    "on_readings": "シュウ",
+    "kun_readings": null,
+    "stroke_count": 11,
+    "jlpt_level": "N5"
+  },
+  {
+    "character": "曜",
+    "meanings": "weekday",
+    "on_readings": "ヨウ",
+    "kun_readings": null,
+    "stroke_count": 18,
+    "jlpt_level": "N5"
+  }
+]
