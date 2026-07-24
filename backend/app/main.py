@@ -27,6 +27,14 @@ app.add_middleware(
 app.include_router(v1_router, prefix=settings.api_v1_prefix)
 
 
+@app.get("/health", include_in_schema=False)
+@app.head("/health", include_in_schema=False)
+def health() -> dict[str, str]:
+    """Lightweight check for load balancers (GET and HEAD)."""
+    return {"status": "ok"}
+
+
 @app.get("/")
+@app.head("/", include_in_schema=False)
 def root() -> dict[str, str]:
     return {"message": "Language Study API — see /docs for interactive API docs"}

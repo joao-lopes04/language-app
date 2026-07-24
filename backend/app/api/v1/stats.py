@@ -109,7 +109,7 @@ def get_dashboard_stats(
     ]
 
     vocabulary_by_hsk: list[HskCount] = []
-    if current_user.study_language == StudyLanguage.ZH:
+    if current_user.study_language == StudyLanguage.CHINESE:
         kanji_rows = db.execute(
             select(Kanji.character, Kanji.hsk_level).where(
                 Kanji.language_code == current_user.study_language,
