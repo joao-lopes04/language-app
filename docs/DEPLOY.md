@@ -5,18 +5,22 @@
 SQLite on Render’s free tier can **reset on redeploy**. For real accounts and vocabulary:
 
 1. Render dashboard → **New → PostgreSQL** (free or paid).
-2. Copy the **Internal Database URL** (or External if required).
-3. On your **Web Service** → **Environment** → add:
+2. Open the new database → **Connect** → copy the **Internal Database URL** (best if the API is on Render in the same region).
+3. On your **Web Service** (`language-app`) → **Environment** → add or set:
 
    ```text
-   DATABASE_URL=postgresql://user:pass@host/dbname
+   DATABASE_URL=<paste Internal Database URL>
    ```
 
-   SQLAlchemy accepts this URL as-is (`app/core/config.py`).
+   Render sometimes shows `postgres://…`; the app normalizes that automatically.
 
-4. **Manual Deploy** the backend. Tables are created on startup via `init_db()`.
+   **Tip:** In the PostgreSQL service, use **Add to environment** / link to your web service if Render offers it — same effect.
 
-5. **Note:** This starts a **fresh** database. Export CSV from the old app first if you need to migrate words (import in Profile when available).
+4. **Save** env vars and wait for a **new deploy** (or **Manual Deploy**). On startup, `init_db()` creates tables and seeds kanji.
+
+5. **Fresh database:** Production accounts from old SQLite on Render are **not** migrated automatically. Register again on the live site, or export CSV locally (Profile) and import after you sign in on production.
+
+6. **Local dev** can stay on SQLite (`backend/.env` without `DATABASE_URL`, or `DATABASE_URL=sqlite:///./japanese_study.db`).
 
 ## Custom domain (Cloudflare Pages)
 

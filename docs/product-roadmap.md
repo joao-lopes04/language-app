@@ -5,7 +5,7 @@ Track progress here. Each phase is shippable on its own (`git push` → Render +
 | # | Feature | Status | Notes |
 |---|---------|--------|--------|
 | 1 | **Learn Phase B** — JLPT N4 + HSK 2 | Done | Run `build_character_seeds.py` + restart API to merge seeds |
-| 2 | **PostgreSQL on Render** | Documented | See [DEPLOY.md](./DEPLOY.md) |
+| 2 | **PostgreSQL on Render** | In progress | See [DEPLOY.md](./DEPLOY.md) |
 | 3 | **Password change + forgot/reset** | Done | Profile + auth flows; optional dev token |
 | 4 | **Learn UX** — pagination, favorites, last viewed | Done | API + localStorage |
 | 5 | **Vocabulary CSV import/export** | Done | Profile export/import |
@@ -22,7 +22,7 @@ Track progress here. Each phase is shippable on its own (`git push` → Render +
 
 1. Finish **1, 3, 4, 5, 9, 11, 13** (foundation + safety).
 2. Then **6, 7, 10, 8** (study workflow + notifications).
-3. **2, 12** when you want production hardening (do PostgreSQL before you rely on cloud data long-term).
+3. **2, 12** when you want production hardening (**Phase C**: PostgreSQL + optional custom domain).
 
 ## Admin setup (item 13)
 
