@@ -3,9 +3,19 @@ import type { FetchKanjiParams, KanjiDetail, KanjiSummary } from '@/features/kan
 import type { JlptLevel } from '@/features/vocabulary/jlpt'
 import type { StudyLanguage } from '@/lib/study-language'
 
+const configuredApiUrl = (import.meta.env.VITE_API_URL as string | undefined)?.replace(
+  /\/$/,
+  '',
+)
+
 const API_BASE =
-  (import.meta.env.VITE_API_URL as string | undefined)?.replace(/\/$/, '') ||
-  '/api/v1'
+  configuredApiUrl || (import.meta.env.DEV ? '/api/v1' : '')
+
+if (!API_BASE && import.meta.env.PROD) {
+  throw new Error(
+    'Missing VITE_API_URL for production build. Set it in Cloudflare Pages env or frontend/.env.production.',
+  )
+}
 
 async function apiFetch(path: string, init: RequestInit = {}): Promise<Response> {
   const headers = new Headers(init.headers)
