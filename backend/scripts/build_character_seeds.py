@@ -8,8 +8,13 @@ Run from repo root:
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from seed_data_phase_b import HSK2_ROWS, N4_ROWS
+
+ROOT = Path(__file__).resolve().parents[1]
 ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "data" / "kanji"
 
@@ -306,10 +311,21 @@ def _dedupe(rows: list[dict[str, object]]) -> list[dict[str, object]]:
     return out
 
 
+def _tag_hsk(rows: list[dict[str, object]], level: int) -> list[dict[str, object]]:
+    tagged: list[dict[str, object]] = []
+    for row in rows:
+        copy = dict(row)
+        copy["hsk_level"] = level
+        copy.setdefault("kun_readings", None)
+        copy.setdefault("jlpt_level", None)
+        tagged.append(copy)
+    return tagged
+
+
 def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    ja = _dedupe(N5_ROWS)
-    zh = _dedupe(HSK1_ROWS)
+    ja = _dedupe(N5_ROWS + N4_ROWS)
+    zh = _dedupe(_tag_hsk(HSK1_ROWS, 1) + _tag_hsk(HSK2_ROWS, 2))
     (OUT_DIR / "ja.json").write_text(
         json.dumps(ja, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",

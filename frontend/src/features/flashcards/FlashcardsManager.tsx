@@ -10,6 +10,8 @@ import {
 } from '@/components/ui/card'
 import {
   createDeck,
+  createDeckFromHsk,
+  createDeckFromJlpt,
   deleteDeck,
   fetchDeck,
   fetchDecks,
@@ -19,6 +21,8 @@ import {
   type DeckSummary,
   type Word,
 } from '@/lib/api'
+import { JLPT_LEVELS, type JlptLevel } from '@/features/vocabulary/jlpt'
+import { useAuth } from '@/context/AuthContext'
 
 type Screen = 'decks' | 'edit' | 'study'
 
@@ -32,6 +36,7 @@ function shuffleIndices(length: number): number[] {
 }
 
 export function FlashcardsManager() {
+  const { isJapaneseStudy } = useAuth()
   const [screen, setScreen] = useState<Screen>('decks')
   const [decks, setDecks] = useState<DeckSummary[]>([])
   const [activeDeck, setActiveDeck] = useState<Deck | null>(null)
@@ -40,6 +45,8 @@ export function FlashcardsManager() {
   const [newDeckName, setNewDeckName] = useState('')
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
+  const [quickJlpt, setQuickJlpt] = useState<JlptLevel>('N5')
+  const [quickHsk, setQuickHsk] = useState<1 | 2>(1)
 
   const [studyOrder, setStudyOrder] = useState<number[]>([])
   const [studyPosition, setStudyPosition] = useState(0)
@@ -71,6 +78,19 @@ export function FlashcardsManager() {
       setScreen('edit')
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to open deck')
+    }
+  }
+
+  async function handleQuickLevelDeck() {
+    setError('')
+    try {
+      const deck = isJapaneseStudy
+        ? await createDeckFromJlpt(quickJlpt)
+        : await createDeckFromHsk(quickHsk)
+      await loadDecks()
+      await openDeckEditor(deck.id)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to create deck')
     }
   }
 
@@ -319,6 +339,35 @@ export function FlashcardsManager() {
           />
           <Button type="submit">Create deck</Button>
         </form>
+
+        <div className="flex flex-wrap items-end gap-2 rounded-lg border border-border p-3">
+          <p className="w-full text-sm font-medium">Quick deck from level</p>
+          {isJapaneseStudy ? (
+            <select
+              className="rounded-md border border-input bg-background px-2 py-2 text-sm"
+              value={quickJlpt}
+              onChange={(e) => setQuickJlpt(e.target.value as JlptLevel)}
+            >
+              {JLPT_LEVELS.map((level) => (
+                <option key={level} value={level}>
+                  {level}
+                </option>
+              ))}
+            </select>
+          ) : (
+            <select
+              className="rounded-md border border-input bg-background px-2 py-2 text-sm"
+              value={quickHsk}
+              onChange={(e) => setQuickHsk(Number(e.target.value) as 1 | 2)}
+            >
+              <option value={1}>HSK 1</option>
+              <option value={2}>HSK 2</option>
+            </select>
+          )}
+          <Button type="button" variant="outline" onClick={() => void handleQuickLevelDeck()}>
+            Create from vocabulary
+          </Button>
+        </div>
 
         {error ? <p className="text-sm text-destructive">{error}</p> : null}
 

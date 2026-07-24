@@ -19,6 +19,8 @@ import {
   type WordInput,
 } from '@/lib/api'
 
+import { consumeWordDraft } from '@/lib/word-draft'
+
 const emptyForm: WordInput = {
   japanese: '',
   reading: '',
@@ -39,7 +41,11 @@ function toPayload(form: WordInput): WordInput {
 
 type FilterValue = 'all' | JlptLevel
 
-export function VocabularyManager() {
+type VocabularyManagerProps = {
+  draftNonce?: number
+}
+
+export function VocabularyManager({ draftNonce = 0 }: VocabularyManagerProps) {
   const { isJapaneseStudy } = useAuth()
   const termLabel = isJapaneseStudy ? 'Japanese' : 'Chinese'
   const readingLabel = isJapaneseStudy ? 'Reading' : 'Pinyin / reading'
@@ -80,6 +86,17 @@ export function VocabularyManager() {
   useEffect(() => {
     void loadWords()
   }, [loadWords])
+
+  useEffect(() => {
+    if (draftNonce === 0) {
+      return
+    }
+    const draft = consumeWordDraft()
+    if (draft) {
+      setEditingId(null)
+      setForm(draft)
+    }
+  }, [draftNonce])
 
   function startEdit(word: Word) {
     setEditingId(word.id)

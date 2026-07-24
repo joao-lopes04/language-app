@@ -4,6 +4,8 @@ import app.models.app_meta  # noqa: F401 — register models with SQLAlchemy
 import app.models.deck  # noqa: F401
 import app.models.grammar_note  # noqa: F401
 import app.models.kanji  # noqa: F401
+import app.models.kanji_favorite  # noqa: F401
+import app.models.password_reset_token  # noqa: F401
 import app.models.user  # noqa: F401
 import app.models.review_event  # noqa: F401
 import app.models.word_review  # noqa: F401

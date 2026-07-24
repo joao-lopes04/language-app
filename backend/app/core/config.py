@@ -21,6 +21,9 @@ class Settings(BaseSettings):
     cors_origins_env: str | None = Field(default=None, validation_alias="CORS_ORIGINS")
     secret_key: str = "dev-only-change-me-in-production"
     access_token_expire_minutes: int = 60 * 24 * 7
+    admin_emails: str | None = Field(default=None, validation_alias="ADMIN_EMAILS")
+    # When true, forgot-password response includes reset token (local dev only).
+    expose_password_reset_token: bool = False
 
     @computed_field  # type: ignore[prop-decorator]
     @property
@@ -35,6 +38,14 @@ class Settings(BaseSettings):
                 raise ValueError("CORS_ORIGINS JSON must be an array of strings")
             return [str(item).strip() for item in parsed if str(item).strip()]
         return [part.strip() for part in text.split(",") if part.strip()]
+
+    @computed_field  # type: ignore[prop-decorator]
+    @property
+    def admin_email_set(self) -> set[str]:
+        raw = self.admin_emails
+        if not raw or not raw.strip():
+            return set()
+        return {part.strip().lower() for part in raw.split(",") if part.strip()}
 
 
 settings = Settings()

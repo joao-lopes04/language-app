@@ -11,6 +11,8 @@ class KanjiSummary(BaseModel):
     character: str
     meanings: str
     jlpt_level: JlptLevel | None = None
+    hsk_level: int | None = None
+    is_favorite: bool = False
 
 
 class KanjiRead(BaseModel):
@@ -23,10 +25,17 @@ class KanjiRead(BaseModel):
     kun_readings: str | None = None
     stroke_count: int | None = None
     jlpt_level: JlptLevel | None = None
+    hsk_level: int | None = None
     notes: str | None = None
 
 
 class KanjiDetail(KanjiRead):
-    """Kanji plus vocabulary rows whose Japanese text contains this character."""
-
     related_words: list[WordRead] = Field(default_factory=list)
+    is_favorite: bool = False
+
+
+class KanjiPage(BaseModel):
+    items: list[KanjiSummary]
+    total: int
+    limit: int
+    offset: int

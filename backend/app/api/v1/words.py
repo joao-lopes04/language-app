@@ -1,4 +1,5 @@
-from fastapi import APIRouter, Depends, HTTPException, Query, status
+from fastapi import APIRouter, Depends, File, HTTPException, Query, UploadFile, status
+from fastapi.responses import PlainTextResponse
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
@@ -9,9 +10,35 @@ from app.models.user import User
 from app.models.word import Word
 from app.schemas.word import WordCreate, WordRead, WordUpdate
 from app.services.ownership import get_owned_word, scope_words
+from app.services.word_csv import export_words_csv, import_words_csv
 from app.services.word_filters import apply_word_list_filters
 
 router = APIRouter(prefix="/words", tags=["words"])
+
+
+@router.get("/export", response_class=PlainTextResponse)
+def export_words(
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+) -> PlainTextResponse:
+    body = export_words_csv(db, current_user)
+    return PlainTextResponse(
+        content=body,
+        media_type="text/csv",
+        headers={"Content-Disposition": 'attachment; filename="vocabulary.csv"'},
+    )
+
+
+@router.post("/import")
+def import_words(
+    file: UploadFile = File(...),
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+) -> dict[str, int]:
+    if not file.filename or not file.filename.lower().endswith(".csv"):
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Upload a .csv file")
+    created, skipped = import_words_csv(db, current_user, file.file)
+    return {"created": created, "skipped": skipped}
 
 
 @router.get("", response_model=list[WordRead])

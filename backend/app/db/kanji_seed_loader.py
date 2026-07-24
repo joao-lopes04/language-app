@@ -22,8 +22,11 @@ def _parse_row(raw: dict[str, Any]) -> dict[str, Any]:
     jlpt = row.get("jlpt_level")
     if jlpt is None:
         row["jlpt_level"] = None
-    elif isinstance(jlpt, str):
+    if isinstance(jlpt, str):
         row["jlpt_level"] = JlptLevel(jlpt)
+    hsk = row.get("hsk_level")
+    if hsk is not None and not isinstance(hsk, int):
+        row["hsk_level"] = int(hsk)
     return row
 
 

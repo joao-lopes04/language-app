@@ -14,6 +14,26 @@ class UserRead(BaseModel):
     id: int
     email: EmailStr
     study_language: StudyLanguage
+    is_admin: bool = False
+
+
+class PasswordChange(BaseModel):
+    current_password: str
+    new_password: str = Field(min_length=8, max_length=128)
+
+
+class ForgotPasswordRequest(BaseModel):
+    email: EmailStr
+
+
+class ForgotPasswordResponse(BaseModel):
+    message: str
+    reset_token: str | None = None
+
+
+class ResetPasswordRequest(BaseModel):
+    token: str
+    new_password: str = Field(min_length=8, max_length=128)
 
 
 class UserSettingsUpdate(BaseModel):

@@ -31,4 +31,5 @@ class Kanji(Base):
         nullable=True,
         index=True,
     )
+    hsk_level: Mapped[int | None] = mapped_column(nullable=True, index=True)
     notes: Mapped[str | None] = mapped_column(Text, nullable=True)

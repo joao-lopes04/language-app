@@ -10,6 +10,11 @@ class JlptCount(BaseModel):
     count: int
 
 
+class HskCount(BaseModel):
+    level: int
+    count: int
+
+
 class ReviewsByDay(BaseModel):
     day: date
     count: int
@@ -25,4 +30,5 @@ class DashboardStats(BaseModel):
     review_events_total: int
     review_streak_days: int
     vocabulary_by_jlpt: list[JlptCount] = Field(default_factory=list)
+    vocabulary_by_hsk: list[HskCount] = Field(default_factory=list)
     reviews_last_7_days: list[ReviewsByDay] = Field(default_factory=list)

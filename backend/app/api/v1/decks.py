@@ -5,10 +5,13 @@ from sqlalchemy.orm import Session, selectinload
 from app.api.deps import get_current_user
 from app.db.session import get_db
 from app.models.deck import Deck
+from app.models.kanji import Kanji
 from app.models.user import User
 from app.models.word import Word
 from app.schemas.deck import (
     DeckCreate,
+    DeckFromHsk,
+    DeckFromJlpt,
     DeckRead,
     DeckSummary,
     DeckUpdate,
@@ -87,6 +90,80 @@ def create_deck(
         user_id=current_user.id,
         study_language=current_user.study_language,
     )
+    db.add(deck)
+    db.commit()
+    db.refresh(deck)
+    return _deck_to_read(deck)
+
+
+@router.post("/from-jlpt", response_model=DeckRead, status_code=status.HTTP_201_CREATED)
+def create_deck_from_jlpt(
+    payload: DeckFromJlpt,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+) -> DeckRead:
+    words = list(
+        db.scalars(
+            scope_words(select(Word), current_user).where(
+                Word.jlpt_level == payload.jlpt_level
+            )
+        ).all()
+    )
+    if not words:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=f"No vocabulary tagged {payload.jlpt_level.value}",
+        )
+    deck = Deck(
+        name=f"JLPT {payload.jlpt_level.value}",
+        user_id=current_user.id,
+        study_language=current_user.study_language,
+    )
+    deck.words = words
+    db.add(deck)
+    db.commit()
+    db.refresh(deck)
+    return _deck_to_read(deck)
+
+
+@router.post("/from-hsk", response_model=DeckRead, status_code=status.HTTP_201_CREATED)
+def create_deck_from_hsk(
+    payload: DeckFromHsk,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+) -> DeckRead:
+    characters = list(
+        db.scalars(
+            select(Kanji.character).where(
+                Kanji.language_code == current_user.study_language,
+                Kanji.hsk_level == payload.hsk_level,
+            )
+        ).all()
+    )
+    if not characters:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=f"No library characters for HSK {payload.hsk_level}",
+        )
+    char_set = set(characters)
+    all_words = list(db.scalars(scope_words(select(Word), current_user)).all())
+    words = [
+        word
+        for word in all_words
+        if word.japanese in char_set
+        or any(ch in char_set for ch in word.japanese)
+    ]
+    if not words:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=f"No vocabulary linked to HSK {payload.hsk_level} characters yet",
+        )
+    deck = Deck(
+        name=f"HSK {payload.hsk_level}",
+        user_id=current_user.id,
+        study_language=current_user.study_language,
+    )
+    deck.words = words
     db.add(deck)
     db.commit()
     db.refresh(deck)

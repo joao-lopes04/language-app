@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
+from app.api.v1.admin import router as admin_router
 from app.api.v1.auth import router as auth_router
 from app.api.v1.decks import router as decks_router
 from app.api.v1.grammar_notes import router as grammar_notes_router
@@ -15,6 +16,7 @@ from app.schemas.app_meta import AppMetaRead
 router = APIRouter()
 
 router.include_router(auth_router)
+router.include_router(admin_router)
 router.include_router(words_router)
 router.include_router(kanji_router)
 router.include_router(grammar_notes_router)

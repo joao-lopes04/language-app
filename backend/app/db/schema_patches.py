@@ -173,4 +173,10 @@ def apply_sqlite_schema_patches() -> None:
                 )
             )
 
+    _add_column_if_missing(
+        "kanji",
+        "hsk_level",
+        "hsk_level INTEGER",
+    )
+
     _migrate_kanji_composite_unique()

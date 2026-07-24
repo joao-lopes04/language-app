@@ -1,5 +1,9 @@
 import { getAuthToken } from '@/lib/auth-storage'
-import type { FetchKanjiParams, KanjiDetail, KanjiSummary } from '@/features/kanji/types'
+import type {
+  FetchKanjiParams,
+  KanjiDetail,
+  KanjiPage,
+} from '@/features/kanji/types'
 import type { JlptLevel } from '@/features/vocabulary/jlpt'
 import type { StudyLanguage } from '@/lib/study-language'
 
@@ -63,6 +67,7 @@ export type AuthUser = {
   id: number
   email: string
   study_language: StudyLanguage
+  is_admin?: boolean
 }
 
 export type TokenResponse = {
@@ -116,6 +121,84 @@ export async function updateStudyLanguage(
   })
   await ensureOk(response, 'Failed to update language')
   return response.json() as Promise<AuthUser>
+}
+
+export async function changePassword(
+  currentPassword: string,
+  newPassword: string,
+): Promise<AuthUser> {
+  const response = await apiFetch('/auth/me/password', {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      current_password: currentPassword,
+      new_password: newPassword,
+    }),
+  })
+  await ensureOk(response, 'Failed to change password')
+  return response.json() as Promise<AuthUser>
+}
+
+export type ForgotPasswordResult = {
+  message: string
+  reset_token?: string | null
+}
+
+export async function forgotPassword(email: string): Promise<ForgotPasswordResult> {
+  const response = await apiFetch('/auth/forgot-password', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email }),
+  })
+  await ensureOk(response, 'Forgot password failed')
+  return response.json() as Promise<ForgotPasswordResult>
+}
+
+export async function resetPassword(
+  token: string,
+  newPassword: string,
+): Promise<AuthUser> {
+  const response = await apiFetch('/auth/reset-password', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ token, new_password: newPassword }),
+  })
+  await ensureOk(response, 'Reset password failed')
+  return response.json() as Promise<AuthUser>
+}
+
+export type AdminUserSummary = {
+  id: number
+  email: string
+  study_language: StudyLanguage
+  created_at: string
+  word_count: number
+}
+
+export async function fetchAdminUsers(): Promise<AdminUserSummary[]> {
+  const response = await apiFetch('/admin/users')
+  await ensureOk(response, 'Failed to load users')
+  return response.json() as Promise<AdminUserSummary[]>
+}
+
+export async function exportVocabularyCsv(): Promise<Blob> {
+  const response = await apiFetch('/words/export')
+  await ensureOk(response, 'Export failed')
+  return response.blob()
+}
+
+export async function importVocabularyCsv(file: File): Promise<{
+  created: number
+  skipped: number
+}> {
+  const body = new FormData()
+  body.append('file', file)
+  const response = await apiFetch('/words/import', {
+    method: 'POST',
+    body,
+  })
+  await ensureOk(response, 'Import failed')
+  return response.json() as Promise<{ created: number; skipped: number }>
 }
 
 export type Word = {
@@ -190,7 +273,7 @@ export async function deleteWord(id: number): Promise<void> {
 
 export async function fetchKanjiList(
   params: FetchKanjiParams = {},
-): Promise<KanjiSummary[]> {
+): Promise<KanjiPage> {
   const search = new URLSearchParams()
   const trimmed = params.q?.trim()
   if (trimmed) {
@@ -199,12 +282,34 @@ export async function fetchKanjiList(
   if (params.jlptLevel !== undefined) {
     search.set('jlpt_level', params.jlptLevel)
   }
+  if (params.hskLevel !== undefined) {
+    search.set('hsk_level', String(params.hskLevel))
+  }
+  if (params.favoritesOnly) {
+    search.set('favorites_only', 'true')
+  }
+  if (params.limit !== undefined) {
+    search.set('limit', String(params.limit))
+  }
+  if (params.offset !== undefined) {
+    search.set('offset', String(params.offset))
+  }
   const queryString = search.toString()
   const response = await apiFetch(
     `/kanji${queryString ? `?${queryString}` : ''}`,
   )
   await ensureOk(response, 'Failed to load kanji')
-  return response.json() as Promise<KanjiSummary[]>
+  return response.json() as Promise<KanjiPage>
+}
+
+export async function setKanjiFavorite(
+  kanjiId: number,
+  favorite: boolean,
+): Promise<void> {
+  const response = await apiFetch(`/kanji/${kanjiId}/favorite`, {
+    method: favorite ? 'POST' : 'DELETE',
+  })
+  await ensureOk(response, 'Failed to update favorite')
 }
 
 export async function fetchKanjiDetail(id: number): Promise<KanjiDetail> {
@@ -320,6 +425,26 @@ export async function createDeck(name: string): Promise<Deck> {
   return response.json() as Promise<Deck>
 }
 
+export async function createDeckFromJlpt(level: JlptLevel): Promise<Deck> {
+  const response = await apiFetch('/decks/from-jlpt', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ jlpt_level: level }),
+  })
+  await ensureOk(response, 'Failed to create deck from JLPT level')
+  return response.json() as Promise<Deck>
+}
+
+export async function createDeckFromHsk(hskLevel: number): Promise<Deck> {
+  const response = await apiFetch('/decks/from-hsk', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ hsk_level: hskLevel }),
+  })
+  await ensureOk(response, 'Failed to create deck from HSK level')
+  return response.json() as Promise<Deck>
+}
+
 export async function updateDeckName(id: number, name: string): Promise<Deck> {
   const response = await apiFetch(`/decks/${id}`, {
     method: 'PATCH',
@@ -397,6 +522,11 @@ export type JlptCount = {
   count: number
 }
 
+export type HskCount = {
+  level: number
+  count: number
+}
+
 export type ReviewsByDay = {
   day: string
   count: number
@@ -412,6 +542,7 @@ export type DashboardStats = {
   review_events_total: number
   review_streak_days: number
   vocabulary_by_jlpt: JlptCount[]
+  vocabulary_by_hsk: HskCount[]
   reviews_last_7_days: ReviewsByDay[]
 }
 

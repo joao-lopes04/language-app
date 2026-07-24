@@ -14,10 +14,11 @@ from app.models.review_event import ReviewEvent
 from app.models.user import User
 from app.models.word import Word
 from app.models.word_review import WordReview
-from app.schemas.stats import DashboardStats, JlptCount, ReviewsByDay
+from app.schemas.stats import DashboardStats, HskCount, JlptCount, ReviewsByDay
 from app.services.ownership import scope_words
 from app.services.srs import utc_now
 from app.services.stats import compute_streak
+from app.core.study_language import StudyLanguage
 
 router = APIRouter(prefix="/stats", tags=["stats"])
 
@@ -107,6 +108,32 @@ def get_dashboard_stats(
         for level in JLPT_LEVELS
     ]
 
+    vocabulary_by_hsk: list[HskCount] = []
+    if current_user.study_language == StudyLanguage.ZH:
+        kanji_rows = db.execute(
+            select(Kanji.character, Kanji.hsk_level).where(
+                Kanji.language_code == current_user.study_language,
+                Kanji.hsk_level.is_not(None),
+            )
+        ).all()
+        char_to_hsk = {character: level for character, level in kanji_rows}
+        hsk_counts: dict[int, int] = {1: 0, 2: 0}
+        user_words = list(db.scalars(scope_words(select(Word), current_user)).all())
+        for word in user_words:
+            levels = {
+                char_to_hsk[ch]
+                for ch in word.japanese
+                if ch in char_to_hsk and char_to_hsk[ch] is not None
+            }
+            if not levels:
+                continue
+            bucket = min(levels)
+            hsk_counts[bucket] = hsk_counts.get(bucket, 0) + 1
+        vocabulary_by_hsk = [
+            HskCount(level=level, count=hsk_counts.get(level, 0))
+            for level in sorted(hsk_counts)
+        ]
+
     event_dates = db.scalars(
         select(ReviewEvent.reviewed_at).where(
             ReviewEvent.word_id.in_(user_word_ids)
@@ -148,5 +175,6 @@ def get_dashboard_stats(
         review_events_total=review_events_total,
         review_streak_days=review_streak_days,
         vocabulary_by_jlpt=vocabulary_by_jlpt,
+        vocabulary_by_hsk=vocabulary_by_hsk,
         reviews_last_7_days=reviews_last_7_days,
     )

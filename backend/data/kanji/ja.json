@@ -1046,5 +1046,197 @@
     "kun_readings": null,
     "stroke_count": 18,
     "jlpt_level": "N5"
+  },
+  {
+    "character": "町",
+    "meanings": "town",
+    "on_readings": "チョウ",
+    "kun_readings": "まち",
+    "stroke_count": 7,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "料",
+    "meanings": "fee, materials",
+    "on_readings": "リョウ",
+    "kun_readings": null,
+    "stroke_count": 10,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "理",
+    "meanings": "reason, manage",
+    "on_readings": "リ",
+    "kun_readings": null,
+    "stroke_count": 11,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "解",
+    "meanings": "unravel, answer",
+    "on_readings": "カイ",
+    "kun_readings": "と",
+    "stroke_count": 13,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "急",
+    "meanings": "urgent",
+    "on_readings": "キュウ",
+    "kun_readings": "いそ",
+    "stroke_count": 9,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "持",
+    "meanings": "hold",
+    "on_readings": "ジ",
+    "kun_readings": "も",
+    "stroke_count": 9,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "待",
+    "meanings": "wait",
+    "on_readings": "タイ",
+    "kun_readings": "ま",
+    "stroke_count": 9,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "思",
+    "meanings": "think",
+    "on_readings": "シ",
+    "kun_readings": "おも",
+    "stroke_count": 9,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "考",
+    "meanings": "consider",
+    "on_readings": "コウ",
+    "kun_readings": "かんが",
+    "stroke_count": 6,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "知",
+    "meanings": "know",
+    "on_readings": "チ",
+    "kun_readings": "し",
+    "stroke_count": 8,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "運",
+    "meanings": "carry, luck",
+    "on_readings": "ウン",
+    "kun_readings": "はこ",
+    "stroke_count": 12,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "動",
+    "meanings": "move",
+    "on_readings": "ドウ",
+    "kun_readings": "うご",
+    "stroke_count": 11,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "働",
+    "meanings": "work",
+    "on_readings": "ドウ",
+    "kun_readings": "はたら",
+    "stroke_count": 13,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "始",
+    "meanings": "begin",
+    "on_readings": "シ",
+    "kun_readings": "はじ",
+    "stroke_count": 8,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "終",
+    "meanings": "end",
+    "on_readings": "シュウ",
+    "kun_readings": "お",
+    "stroke_count": 11,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "起",
+    "meanings": "wake, rise",
+    "on_readings": "キ",
+    "kun_readings": "お",
+    "stroke_count": 10,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "寝",
+    "meanings": "sleep",
+    "on_readings": "シン",
+    "kun_readings": "ね",
+    "stroke_count": 13,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "送",
+    "meanings": "send",
+    "on_readings": "ソウ",
+    "kun_readings": "おく",
+    "stroke_count": 9,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "届",
+    "meanings": "deliver",
+    "on_readings": "カイ",
+    "kun_readings": "とど",
+    "stroke_count": 8,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "注",
+    "meanings": "pour, note",
+    "on_readings": "チュウ",
+    "kun_readings": "そそ",
+    "stroke_count": 8,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "意",
+    "meanings": "idea, mind",
+    "on_readings": "イ",
+    "kun_readings": null,
+    "stroke_count": 13,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "味",
+    "meanings": "taste",
+    "on_readings": "ミ",
+    "kun_readings": "あじ",
+    "stroke_count": 8,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "便",
+    "meanings": "convenience",
+    "on_readings": "ベン",
+    "kun_readings": "たよ",
+    "stroke_count": 9,
+    "jlpt_level": "N4"
+  },
+  {
+    "character": "利",
+    "meanings": "profit, sharp",
+    "on_readings": "リ",
+    "kun_readings": null,
+    "stroke_count": 7,
+    "jlpt_level": "N4"
   }
 ]

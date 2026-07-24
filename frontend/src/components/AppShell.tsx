@@ -14,6 +14,7 @@ import { ProfileScreen } from '@/features/profile/ProfileScreen'
 import { ReviewSession } from '@/features/review/ReviewSession'
 import { VocabularyManager } from '@/features/vocabulary/VocabularyManager'
 import { useAuth } from '@/context/AuthContext'
+import { useReviewReminders } from '@/hooks/useReviewReminders'
 import { STUDY_LANGUAGE_LABELS } from '@/lib/study-language'
 import { Button } from '@/components/ui/button'
 
@@ -36,8 +37,16 @@ export function AppShell() {
   const { user, dataEpoch, isJapaneseStudy } = useAuth()
   const [tab, setTab] = useState<MainTab>('words')
   const [learnPane, setLearnPane] = useState<LearnPane>('kanji')
+  const [vocabDraftNonce, setVocabDraftNonce] = useState(0)
+
+  useReviewReminders(Boolean(user))
 
   const characterLabel = isJapaneseStudy ? 'Kanji' : 'Characters'
+
+  function openVocabularyWithDraft() {
+    setVocabDraftNonce((n) => n + 1)
+    setTab('words')
+  }
 
   return (
     <div className="mx-auto flex min-h-svh max-w-lg flex-col bg-background">
@@ -59,7 +68,7 @@ export function AppShell() {
         className="flex-1 overflow-y-auto px-4 py-4 pb-24"
       >
         {tab === 'words' ? (
-          <VocabularyManager />
+          <VocabularyManager draftNonce={vocabDraftNonce} />
         ) : tab === 'review' ? (
           <ReviewSession />
         ) : tab === 'cards' ? (
@@ -87,7 +96,7 @@ export function AppShell() {
               </Button>
             </div>
             {learnPane === 'kanji' ? (
-              <KanjiDictionary />
+              <KanjiDictionary onAddToVocabulary={openVocabularyWithDraft} />
             ) : (
               <GrammarNotesManager />
             )}

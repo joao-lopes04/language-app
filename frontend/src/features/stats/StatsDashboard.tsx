@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 import { fetchDashboardStats, type DashboardStats } from '@/lib/api'
+import { useAuth } from '@/context/AuthContext'
 
 function StatTile({ label, value }: { label: string; value: number }) {
   return (
@@ -20,6 +21,7 @@ function StatTile({ label, value }: { label: string; value: number }) {
 }
 
 export function StatsDashboard() {
+  const { isJapaneseStudy } = useAuth()
   const [stats, setStats] = useState<DashboardStats | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
@@ -43,6 +45,9 @@ export function StatsDashboard() {
   const maxJlpt = stats
     ? Math.max(1, ...stats.vocabulary_by_jlpt.map((row) => row.count))
     : 1
+  const maxHsk = stats
+    ? Math.max(1, ...stats.vocabulary_by_hsk.map((row) => row.count))
+    : 1
   const maxDaily = stats
     ? Math.max(1, ...stats.reviews_last_7_days.map((row) => row.count))
     : 1
@@ -52,8 +57,8 @@ export function StatsDashboard() {
       <CardHeader>
         <CardTitle>Statistics</CardTitle>
         <CardDescription>
-          Counts across your study data, JLPT breakdown, and review activity
-          (streak uses review history from M10 onward).
+          Counts across your study data,{' '}
+          {isJapaneseStudy ? 'JLPT' : 'HSK'} breakdown, and review activity.
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-6">
@@ -77,7 +82,10 @@ export function StatsDashboard() {
             </div>
 
             <div className="space-y-2">
-              <p className="text-sm font-medium">Vocabulary by JLPT</p>
+              <p className="text-sm font-medium">
+                {isJapaneseStudy ? 'Vocabulary by JLPT' : 'Vocabulary by HSK'}
+              </p>
+              {isJapaneseStudy ? (
               <ul className="space-y-2">
                 {stats.vocabulary_by_jlpt.map((row) => (
                   <li key={row.level} className="flex items-center gap-3 text-sm">
@@ -94,6 +102,30 @@ export function StatsDashboard() {
                   </li>
                 ))}
               </ul>
+              ) : (
+              <ul className="space-y-2">
+                {stats.vocabulary_by_hsk.length === 0 ? (
+                  <p className="text-sm text-muted-foreground">
+                    Add words that use HSK 1–2 characters to see a breakdown.
+                  </p>
+                ) : (
+                  stats.vocabulary_by_hsk.map((row) => (
+                    <li key={row.level} className="flex items-center gap-3 text-sm">
+                      <span className="w-10 font-medium">HSK {row.level}</span>
+                      <div className="h-3 flex-1 rounded-full bg-muted">
+                        <div
+                          className="h-3 rounded-full bg-primary"
+                          style={{ width: `${(row.count / maxHsk) * 100}%` }}
+                        />
+                      </div>
+                      <span className="w-6 text-right text-muted-foreground">
+                        {row.count}
+                      </span>
+                    </li>
+                  ))
+                )}
+              </ul>
+              )}
             </div>
 
             <div className="space-y-2">

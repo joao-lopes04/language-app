@@ -2,6 +2,7 @@ from datetime import datetime
 
 from pydantic import BaseModel, ConfigDict, Field
 
+from app.core.jlpt import JlptLevel
 from app.schemas.word import WordRead
 
 
@@ -36,3 +37,11 @@ class DeckRead(DeckBase):
 
 class DeckWordsUpdate(BaseModel):
     word_ids: list[int] = Field(default_factory=list)
+
+
+class DeckFromJlpt(BaseModel):
+    jlpt_level: JlptLevel
+
+
+class DeckFromHsk(BaseModel):
+    hsk_level: int = Field(ge=1, le=6)
